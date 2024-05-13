@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>     <!--  basic html doc structure/link to external stylesheet     -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link to font sheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- link to css stylesheet -->
+    <link rel="stylesheet" href="style1.css">       
+    <title>Modern Login Page | AsmrProg</title>
+</head>
+
+<body>
+
+    
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+             <!--  form element for collecting user input  -->
+             <!-- sign up form -->
+             <form> 
+
+                <img src="meri logo.webp" alt="MERI LOGO">
+                <h1>Create Account</h1>
+                
+                <div class="social-icons"> <!--comtainer for the social media icon  -->
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <!-- input elements for form fields/ different types(text, email, password)/ name in the placeholder -->
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <img src="meri logo.webp" alt="MERI LOGO">
+                <h1>Sign In</h1>
+                <div class="social-icons">
+                    <!-- creating links for icons -->
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+
+                <!-- sign in form/ fields for e-mail and pswd ->to login and reset the password -->
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="#">Forget Your Password?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+
+        <!-- toggle pannel -->
+        <div class="toggle-container">    <!--wraps whole toggle functionality    -->
+             <div class="toggle">    <!--handles the toggling between sign up and sign in       -->
+                <div class="toggle-panel toggle-left">      <!-- sign in toggle panel-->
+                    <h1>Welcome Back!</h1>      
+                    <p>Enter your personal details to continue</p>
+                    <button class="hidden" id="login">Sign In</button>      <!-- login id for maniuplating the buttons-->
+                </div>
+                <div class="toggle-panel toggle-right">     <!-- sign up toggle panel-->
+                    <h1>Welcome!</h1>
+                    <p>Register with your personal details to start your educational journey</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- adding js file -->
+    <script src="script1.js"></script>
+</body>
+
+</html>
